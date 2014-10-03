@@ -1371,6 +1371,11 @@ void KTerminalDisplay::blinkEvent()
     update();
 }
 
+void KTerminalDisplay::banana(int, int, int, int)
+{
+    fprintf(stderr, "banana isn't implemented.\n");
+}
+
 void KTerminalDisplay::updateCursor()
 {
     QRect cursorRect = imageToWidget( QRect(cursorPosition(),QSize(1,1)) );
